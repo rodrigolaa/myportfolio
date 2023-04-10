@@ -1,0 +1,64 @@
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    padding-bottom: 5rem;
+}
+
+.post{
+    max-width: 1120px;
+    margin: 5rem auto 0;
+    img{
+        max-width: 720px;
+        max-height: 410px;
+        border-radius: 15px;
+    }
+
+    h1{
+        font-size: 2rem;
+        font-weight: 900;
+        color: #fff;
+    }
+
+    time{
+        color: #f2f2f2;
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        display: block;
+    }
+}
+
+.postContent{
+    margin-top: 2rem;
+    line-height: 2rem;
+    font-size: 1.125rem;
+    color: #fff;
+
+    iframe{
+        width: 100%;
+        min-height: 350px;
+        padding: 0.5rem 0;
+    }
+    p,ul{
+        margin: 1.5rem 0;
+    }
+    ul{
+        padding-left: 1.5rem;
+        li{
+            margin: 0.5rem 0;
+        }
+    }
+
+    a:hover{
+        color: #ffbe16;
+    }
+
+    pre{
+        border-radius: 0.5rem;
+        background: #f2f2f2;
+        padding: 0.5rem;
+        color: #fff;
+    }
+
+}
+

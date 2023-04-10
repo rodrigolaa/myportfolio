@@ -9,14 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prismicio/client": "^5.1.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.33",
     "@types/react-dom": "18.0.11",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "next": "13.3.0",
+    "prismic-dom": "^2.2.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "sass": "^1.61.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/prismic-dom": "^2.1.1"
   }
 }
