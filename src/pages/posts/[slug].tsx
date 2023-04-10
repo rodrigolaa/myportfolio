@@ -12,11 +12,11 @@ import Image from 'next/image';
 
 interface PostProps{
     post:{
-        slug:String,
-        title:String,
-        cover:String,
-        description:String,
-        updatedAt:String,
+        slug:string,
+        title:string,
+        cover:string,
+        description:string,
+        updatedAt:string,
 
     }
 }
@@ -50,7 +50,7 @@ export const getServerSideProps: GetServerSideProps = async ({req, params}) =>{
    
 
 
-    const slug = params.slug;
+    const slug = params ;
 
     const prismic = getPrismicClient(req);
 
@@ -71,13 +71,12 @@ export const getServerSideProps: GetServerSideProps = async ({req, params}) =>{
         title: RichText.asText(response.data.title),
         description: RichText.asHtml(response.data.description),
         cover: response.data.cover.url,
-        updatedAt: new Date(response.last_publication_date).toLocaleDateString('pt-BR', {
+        updatedAt: new Date().toLocaleDateString('pt-BR', {
             day:'2-digit',
             month:'long',
             year:'numeric'
         }),
     }
-
     return{
         props:{
             post
