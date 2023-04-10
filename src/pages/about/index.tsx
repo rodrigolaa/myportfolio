@@ -7,13 +7,16 @@ import { useState } from 'react'
 import Head from 'next/head';
 import {FiLinkedin, FiGithub} from 'react-icons/fi'
 
-interface ContentProps{
+type content = {
     title:string,
     description:string,
     banner:string,
     github:string,
     linkedin:string,
+}
 
+interface ContentProps{
+    content: content
 
 }
 
